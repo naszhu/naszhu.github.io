@@ -3,59 +3,77 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Shuchun Lai (naszhu) – Cognitive Modeling</title>
-
-
-  <meta name="description" content="Shuchun Lai (Lea Lai) – researcher in cognitive modeling, memory, and decision processes" />
-  <meta name="author" content="Shuchun Lai (Lea Lai)" />
-
-  <!-- 若以后接入统计或验证，把代码放在这里 -->
+  <title>Lea Lai (Shuchun Lea Lai) – Cognitive Modeling Researcher</title>
+  <meta name="description" content="Homepage of cognitive scientist Shuchun Lea Lai (goes by Lea Lai)." />
+  <link rel="canonical" href="https://naszhu.github.io/" />
+  <script type="application/ld+json">{
+    "@context":"https://schema.org",
+    "@type":"Person",
+    "name":"Shuchun Lea Lai",
+    "alternateName":"Lea Lai",
+    "jobTitle":"Cognitive Scientist",
+    "url":"https://naszhu.github.io/",
+    "sameAs":["https://github.com/naszhu"]
+  }</script>
+  <style>
+    :root {font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;--accent:#0066cc;line-height:1.6;}
+    body{margin:0;color:#222;}
+    header{background:var(--accent);color:#fff;padding:2.5rem 1rem;text-align:center;}
+    header h1{margin:0 0 .5rem;font-size:2.2rem;}
+    header p{margin:0;font-size:1.1rem;}
+    nav{display:flex;justify-content:center;gap:2rem;background:#f4f6f8;padding:.75rem 0;}
+    nav a{text-decoration:none;color:var(--accent);font-weight:600;}
+    main{max-width:860px;margin:2rem auto;padding:0 1rem;}
+    section{margin-bottom:3rem;}
+    section h2{border-bottom:2px solid #e3e7eb;padding-bottom:.4rem;font-size:1.5rem;color:var(--accent);}
+    ul.project-list{list-style:none;padding:0;}
+    ul.project-list li{margin-bottom:1rem;}
+    ul.project-list a{font-weight:600;}
+    .nolink{font-weight:600;}
+    footer{text-align:center;padding:1.5rem 0;background:#f4f6f8;font-size:.9rem;}
+  </style>
 </head>
 <body>
   <header>
-    <h1>Lea (naszhu)</h1>
-    <p>Ph.D. in Cognitive Psychology · Memory & Modeling Specialist</p>
+    <h1>Lea Lai (Shuchun Lea Lai)</h1>
+    <p>Research areas: cognitive modeling · decision processes · probabilistic models</p>
   </header>
 
   <nav>
-    <ul>
-      <li><a href="#about">About</a></li>
-      <li><a href="#projects">Projects</a></li>
-      <li><a href="#publications">Publications</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
+    <a href="#about">About</a>
+    <a href="#contact">Contact</a>
   </nav>
 
   <main>
     <section id="about">
-      <h2>About me</h2>
-      <p><!-- 简介写在这里 --></p>
+      <h2>About</h2>
+      <p>I’m <strong>Lea</strong>, a cognitive scientist interested in building quantitative models that link internal cognitive processes to observable behaviour. I develop probabilistic and dynamical frameworks (e.g., REM, DDM) and evaluate them with carefully designed behavioural experiments. I earned my Ph.D. at Indiana University and currently work as an academic researcher.</p>
     </section>
 
     <section id="projects">
-      <h2>Selected Projects</h2>
-      <ul>
-        <li><a href="https://naszhu.github.io/EXP_host/">EXP_host – jsPsych experiment hosting</a></li>
-        <li><a href="https://github.com/naszhu/REM_context">REM_context – REM simulations</a></li>
-        <!-- 更多项目 -->
+      <h2>Key Repositories</h2>
+      <ul class="project-list">
+        <li><a href="https://naszhu.github.io/project-context/">project-context</a> – Dissertation master repo: experiments, analyses, manuscripts, and context‑shifting REM code (Julia · R · Markdown)</li>
+        <li><a href="https://naszhu.github.io/REM_E3_model_fixed/">REM_E3_model_fixed</a> – Clean implementation & simulation of Experiment 3 (context‑filter variant) (Julia)</li>
+        <li><a href="https://naszhu.github.io/EXP_host/">EXP_host</a> – Front‑end HTML/JS files served via Cloudflare Pages for Experiment 3 (HTML · JS · jsPsych)</li>
+        <li><span class="nolink">jspsych-backend</span> – Render‑hosted REST API for secure data capture from jsPsych tasks (Node · Express)</li>
+        <li><span class="nolink">lea‑journal</span> – Daily research log & conceptual sketches (private) (Markdown)</li>
+        <li><span class="nolink">REM_context</span> – Early REM simulations with context gates (archive) (Julia)</li>
+        <li><span class="nolink">project‑visualmemory‑sideexp</span> – Side experiment on visual memory similarity (Jupyter Notebook)</li>
+        <li><span class="nolink">classnotes</span> – Forked lecture notes (ODE, Calc, Linear Algebra, etc.) (Markdown)</li>
       </ul>
-    </section>
-
-    <section id="publications">
-      <h2>Publications & Preprints</h2>
-      <p><!-- 列表或 BibTeX 链接 --></p>
     </section>
 
     <section id="contact">
       <h2>Contact</h2>
-      <p>Email: <a href="mailto:your_email@example.com">your_email@example.com</a></p>
+      <p>Email: <a href="mailto:shulai@iu.edu">shulai@iu.edu</a></p>
       <p>GitHub: <a href="https://github.com/naszhu">github.com/naszhu</a></p>
     </section>
   </main>
 
   <footer>
-    © <span id="year"></span> Shuchun Lai (Lea Lai). All rights reserved.
-    <script>document.getElementById("year").textContent = new Date().getFullYear();</script>
+    © <span id="year"></span> Lea Lai. All rights reserved.
   </footer>
+  <script>document.getElementById("year").textContent=new Date().getFullYear();</script>
 </body>
 </html>
